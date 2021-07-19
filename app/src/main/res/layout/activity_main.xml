@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_image1"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/reg" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:textSize="25dp"
+        android:layout_below="@id/imageView"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:layout_marginTop="20dp"
+        android:textSize="25dp"
+        android:layout_below="@id/username"/>
+
+    <EditText
+        android:id="@+id/rePassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ReEnter Password"
+        android:layout_marginTop="20dp"
+        android:textSize="25dp"
+        android:layout_below="@id/password"/>
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textAllCaps="false"
+        android:layout_below="@+id/rePassword"
+        android:textSize="25dp"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/btnSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Existing User\n Go to Sign In Page"
+        android:textAllCaps="false"
+        android:layout_below="@+id/btnSignUp"
+        android:textSize="25dp"
+        android:layout_marginTop="20dp"/>
+
+
+
+</RelativeLayout>
