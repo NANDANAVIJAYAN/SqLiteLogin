@@ -13,7 +13,7 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     EditText username,password,rePassword;
-    Button btnSignUp,btnSignIn;
+    Button btnSignUp,btnSignIn,md5check;;
     DBHelper myDB;
 
     @Override
@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
         btnSignUp = (Button)findViewById(R.id.btnSignUp);
         btnSignIn = (Button)findViewById(R.id.btnSignIn);
+        md5check = (Button) findViewById(R.id.viewmd5Pass);
 
         myDB = new DBHelper(this);
 
@@ -77,5 +78,13 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        md5check.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(),dbView.class);
+                startActivity(intent);
+            }
+        });
+
     }
 }

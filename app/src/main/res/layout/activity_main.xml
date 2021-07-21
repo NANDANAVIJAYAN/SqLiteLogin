@@ -55,11 +55,21 @@
         android:id="@+id/btnSignIn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Existing User\n Go to Sign In Page"
+        android:text="Login"
         android:textAllCaps="false"
         android:layout_below="@+id/btnSignUp"
         android:textSize="25dp"
         android:layout_marginTop="20dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:text="MD5 Check"
+        android:layout_below="@+id/btnSignIn"
+        android:layout_marginTop="20dp"
+        android:id="@+id/viewmd5Pass" />
+
 
 
 
